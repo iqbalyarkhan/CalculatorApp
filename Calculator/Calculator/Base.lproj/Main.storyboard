@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jAn-G6-TXc">
+                                <rect key="frame" x="37" y="28" width="535" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="563" id="EpS-Nq-Ozt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="EpS-Nq-Ozt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zse-rX-A6l">
+                                <rect key="frame" x="20" y="65" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GwO-R4-XU6">
+                                <rect key="frame" x="285" y="228" width="30" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="7"/>
+                                <connections>
+                                    <action selector="appendDigit:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hme-We-pAT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="6FM-L2-Mtd"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Zse-rX-A6l" secondAttribute="trailing" id="AaQ-rA-evC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jAn-G6-TXc" secondAttribute="trailing" constant="8" id="IAq-nJ-l8k"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="LtA-Li-rH1"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="PdA-g0-O0x"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="SYL-vs-nQ1"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="jAn-G6-TXc" secondAttribute="leading" id="b95-9b-HNM"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="bQW-ke-V4T"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jAn-G6-TXc" secondAttribute="trailing" constant="8" id="dXm-Yc-GzD"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ged-nC-yvi"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Zse-rX-A6l" secondAttribute="leading" id="kO5-vV-BCi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jAn-G6-TXc" secondAttribute="trailing" constant="8" id="lDQ-pB-yXi"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="jAn-G6-TXc" secondAttribute="bottom" constant="492" id="ohZ-PT-jM3"/>
+                            <constraint firstItem="Zse-rX-A6l" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="45" id="ozI-wm-vzD"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="rZg-jW-X7E"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="ssS-lN-USV"/>
+                            <constraint firstItem="jAn-G6-TXc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="17" id="tUO-YP-rbT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jAn-G6-TXc"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="6FM-L2-Mtd"/>
+                                <exclude reference="IAq-nJ-l8k"/>
+                                <exclude reference="LtA-Li-rH1"/>
+                                <exclude reference="PdA-g0-O0x"/>
+                                <exclude reference="b95-9b-HNM"/>
+                                <exclude reference="ged-nC-yvi"/>
+                                <exclude reference="lDQ-pB-yXi"/>
+                                <exclude reference="ssS-lN-USV"/>
+                                <exclude reference="tUO-YP-rbT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="display" destination="Zse-rX-A6l" id="9DR-r9-pz0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="308"/>
+        </scene>
+    </scenes>
+</document>
